@@ -1,0 +1,26 @@
+{
+  "name": "react",
+  "version": "0.0.0",
+  "private": true,
+  "dependencies": {
+    "@testing-library/jest-dom": "^5.16.4",
+    "@testing-library/react": "^13.3.0",
+    "concurrently": "^7.2.2",
+    "jest-mock-fetch": "^2.0.5",
+    "json-server": "^0.17.0",
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0",
+    "uuid": "^8.3.2"
+  },
+  "scripts": {
+    "start": "concurrently \"npm start:client\" \"npm start:server --port 3001\"",
+    "start:client": "react-scripts start",
+    "start:server": "json-server --watch db.json",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "react-scripts": "latest"
+  }
+}

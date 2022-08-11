@@ -1,0 +1,28 @@
+    "start": "react-scripts start",
+
+
+    part 1
+    https://frontend-digest.com/setting-up-a-full-stack-react-application-835c2a37eb7a
+
+    part 2
+    https://frontend-digest.com/testing-a-full-stack-react-application-ead73747fbb0
+
+
+
+react testing library renders component then tests output
+
+what should we test?
+
+Our acceptance criteria
+    Users should be able to see a list of books
+    Users should be able to create books
+    Users should be able to edit book titles
+    Users should be able to delete books
+
+dependencies:
+    jest-mock-fetch
+    @testing-library/jest-dom
+    @testing-library/react
+
+create file:
+    setupTests.js
